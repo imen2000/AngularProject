@@ -1,0 +1,30 @@
+{
+    "members": [
+        {
+            "id":"12345",
+            "cin":"1236",
+            "name":"imen",
+            "createDate":"13/09/2022",
+            "cv":"lien",
+            "type":"Student"
+          },
+          {
+            "id":"12346",
+            "cin":"1237",
+            "name":"Nahla",
+            "createDate":"12/09/2022",
+            "cv":"lien",
+            "type":"Teacher"
+          },
+          {
+            "id":"12347",
+            "cin":"1238",
+            "name":"Asma",
+            "createDate":"11/09/2022",
+            "cv":"lien",
+            "type":"Doctor"
+          }
+
+    ]
+
+}
