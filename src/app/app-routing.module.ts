@@ -5,11 +5,7 @@ import { MembersComponent } from './members/members.component';
 import {MembersFromComponent} from  './members-from/members-from.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    pathMatch:'full',
-    redirectTo:'members',
-  },
+ 
 {
   path: 'members',
   pathMatch:'full',
@@ -20,12 +16,23 @@ const routes: Routes = [
   pathMatch:'full',
   component: MembersFromComponent,
 },
+{
+  path: 'members/:id/edit',  // ki t7ot ay haja ba3d el localhost:4200/ ywali y7otek fil localhost:4200/members
+  pathMatch:'full',
+  component: MembersFromComponent,
+},
+{
+  path: '',
+  pathMatch:'full',
+  redirectTo:'members',
+},
 
 {
   path: '**',  // ki t7ot ay haja ba3d el localhost:4200/ ywali y7otek fil localhost:4200/members
   pathMatch:'full',
   redirectTo:'members',
 }
+
 ];
 
 @NgModule({
