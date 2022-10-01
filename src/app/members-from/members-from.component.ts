@@ -56,9 +56,11 @@ initForm():void{ // initialiser  le formulaire
 ONSUB(): void{
   //récupération de l'élément
   console.log(this.form.value)
-  const objectToSubmit=this.form.value; 
+ // const objectToSubmit=this.form.value; 
+  const objectToSubmit={...this.item1,...this.form.value}; 
   //invocation de la méthode de service qui envoie http(post)
   this.memberService.saveMember(objectToSubmit).then(()=>{this.router.navigate(['./members'])});
   
 }
+
 }
