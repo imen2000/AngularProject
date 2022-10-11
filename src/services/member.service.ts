@@ -13,7 +13,7 @@ export class MemberService {
  {
 
  }
- saveMember(member:any):Promise<any>{
+ saveMember(member:any):Promise<Member>{
   //return this.httpClient.post<Member>("linktorestAPI", member.toPromise());
 
        

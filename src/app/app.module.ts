@@ -13,13 +13,37 @@ import { MatFormFieldModule } from '@angular/material/form-field';
  import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { LayoutComponent } from './layout/layout.component';
+
+
+import{ MatSidenavModule} from '@angular/material/sidenav';
+import{MatToolbarModule} from '@angular/material/toolbar';
+import{MatListModule} from '@angular/material/list';
+import{MatMenuModule} from '@angular/material/menu';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ArticleComponent } from './article/article.component';
+import { ToolsComponent } from './tools/tools.component';
+import { EventsComponent } from './events/events.component';
+import { AffectComponent } from './affect/affect.component';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MembersComponent,
-    MembersFromComponent
+    MembersFromComponent,
+    ConfirmDialogComponent,
+    LayoutComponent,
+    DashboardComponent,
+    ArticleComponent,
+    ToolsComponent,
+    EventsComponent,
+    AffectComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +56,16 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatMenuModule,
+    MatOptionModule,
+    MatSelectModule,
+    FlexLayoutModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

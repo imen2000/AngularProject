@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MembersComponent } from './members/members.component';
 import {MembersFromComponent} from  './members-from/members-from.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ToolsComponent } from './tools/tools.component';
+import { ArticleComponent } from './article/article.component';
+import { EventsComponent } from './events/events.component';
+import { AffectComponent } from './affect/affect.component';
 
 const routes: Routes = [
  
@@ -21,6 +26,32 @@ const routes: Routes = [
   pathMatch:'full',
   component: MembersFromComponent,
 },
+{
+  path: 'articles/:id/affect',  
+  pathMatch:'full',
+  component: AffectComponent,
+},
+{
+  path: 'dashboard',  // ki t7ot ay haja ba3d el localhost:4200/ ywali y7otek fil localhost:4200/members
+  pathMatch:'full',
+ component: DashboardComponent,
+},
+{
+  path: 'tools',  // ki t7ot ay haja ba3d el localhost:4200/ ywali y7otek fil localhost:4200/members
+  pathMatch:'full',
+ component: ToolsComponent,
+},
+{
+  path: 'articles',  // ki t7ot ay haja ba3d el localhost:4200/ ywali y7otek fil localhost:4200/members
+  pathMatch:'full',
+ component: ArticleComponent,
+},
+{
+  path: 'Events',  // ki t7ot ay haja ba3d el localhost:4200/ ywali y7otek fil localhost:4200/members
+  pathMatch:'full',
+ component: EventsComponent,
+},
+
 {
   path: '',
   pathMatch:'full',
