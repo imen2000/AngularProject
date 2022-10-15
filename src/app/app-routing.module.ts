@@ -8,9 +8,14 @@ import { ToolsComponent } from './tools/tools.component';
 import { ArticleComponent } from './article/article.component';
 import { EventsComponent } from './events/events.component';
 import { AffectComponent } from './affect/affect.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
- 
+  {
+    path: 'login',
+    pathMatch:'full',
+    component: LoginComponent,
+  },
 {
   path: 'members',
   pathMatch:'full',

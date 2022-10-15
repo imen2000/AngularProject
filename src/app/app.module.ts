@@ -30,7 +30,9 @@ import { AffectComponent } from './affect/affect.component';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { FirebaseModule } from './Firebase.module';
+import { LoginComponent } from './login/login.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ArticleComponent,
     ToolsComponent,
     EventsComponent,
-    AffectComponent
+    AffectComponent,
+    
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatMenuModule,
     MatOptionModule,
     MatSelectModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FirebaseModule,
+    MatCardModule
    
   ],
   providers: [],
